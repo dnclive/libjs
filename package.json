@@ -1,0 +1,44 @@
+{
+  "name": "@dnclive/libjs",
+  "version": "0.1.0",
+  "description": "Useful js",
+  "main": "build/lib.js",
+  "exports": {
+    "import": "./build/lib.mjs",
+    "require": "./build/lib.cjs",
+    "default": "./build/lib.js"
+  },
+  "browser": "build/lib.js",
+  "_moduleAliases": {
+    "@mod": "src"
+  },
+  "scripts": {
+    "esbuild": "node src/esbuilder.mjs",
+    "test": "node tests/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnclive/libjs.git"
+  },
+  "keywords": [
+    "Usuful",
+    "js"
+  ],
+  "author": "Vladimir Zhlobentsev <vladimir.zhlobentsev@gmail.com> (https://github.com/dnclive)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnclive/libjs/issues"
+  },
+  "homepage": "https://github.com/dnclive/libjs#readme",
+  "engines": {
+    "node": ">=16.0.0 <22.0.0",
+    "npm": ">=9.0.0 <11.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.9",
+    "module-alias": "^2.2.3"
+  }
+}
