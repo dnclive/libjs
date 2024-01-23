@@ -91,6 +91,7 @@ export const deepMemo = ({store, key, item, data}) => {
 }
 
 // await-async timeout
+// await timeout(1000)
 export const timeout = m => new Promise(r => setTimeout(r, m))
 const fTimeout = timeout
 
@@ -214,4 +215,8 @@ export const fUTSS =  (offset=0, base = utcNowTimestamp()) => {
     //log("fUTSS", new Date(base), new Date(timeOffset))
     //return timeOffset
     return base - base%300000 - 300000*offset
+}
+
+export function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
 }

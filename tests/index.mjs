@@ -6,7 +6,7 @@ import {
   rectIntersect,
   getAllIndexes,
   uniqBy
-} from '../src/lib.mjs'
+} from '#selfmod/lib.mjs'
 
 console.log("rFact", rFact(10))
 console.log("rFact", sFact(10))
