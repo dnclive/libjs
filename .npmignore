@@ -1,6 +1,7 @@
 node_modules/
 src/
 test/
+sh/
 .idea
 .gitignore
 jsconfig.json

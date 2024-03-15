@@ -1,6 +1,6 @@
 {
   "name": "@dnclive/libjs",
-  "version": "0.1.0",
+  "version": "0.1.1-1",
   "description": "Useful js",
   "main": "build/lib.js",
   "exports": {
@@ -13,8 +13,7 @@
     "#selfmod/*": "./src/*"
   },
   "directories": {
-    "build": "./build",
-    "src": "./src"
+    "build": "./build"
   },
   "scripts": {
     "esbuild": "node src/esbuilder.mjs",
