@@ -24,6 +24,9 @@ git commit --all -m "$NEWVER"
 git tag -a v$NEWVER -m "$NEWVER"
 git push origin --all --follow-tags
 
+# esbuild
+npm run esbuild
+
 # publish to npm
 npm publish
 #git push origin --tags
