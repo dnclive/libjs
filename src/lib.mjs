@@ -3,7 +3,7 @@
  * @module
  */
 
-import isEqual from "lodash"
+//import isEqual from "lodash"
 
 export function rFact(num)
 {
@@ -65,7 +65,7 @@ export function uniqBy(arr, f) {
 
 // *** Deep MEMO ***
 
-export const deepMemo = ({store, key, item, data}) => {
+/*export const deepMemo = ({store, key, item, data}) => {
     if (!store) return undefined
     if (item?.i !== undefined && data !== undefined) {
         const item = store[item.i]
@@ -88,7 +88,7 @@ export const deepMemo = ({store, key, item, data}) => {
         store.push(newMemo)
         return newMemo
     }
-}
+}*/
 
 // await-async timeout
 // await timeout(1000)
