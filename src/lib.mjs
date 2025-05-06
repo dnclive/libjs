@@ -233,3 +233,15 @@ const fReplace = (object, fromVal, toVal) => {
   } else if (object === fromVal) return toVal
   else return object
 }
+
+export const fJSONParse = (json) => {
+  try {
+    return JSON.parse(json)
+  } catch(err) {
+    if (json && json!=='') {
+      console.error('fJSONConf', err)
+      console.log(json)
+    }
+    return undefined
+  }
+}
