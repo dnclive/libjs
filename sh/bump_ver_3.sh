@@ -8,10 +8,6 @@ ENV="${NODE_ENV:-development}"
 source "$PWD/.env" 2> /dev/null
 source "$PWD/.env.$ENV" 2> /dev/null
 
-echo "$NODE_ENV"
-echo "$ENV"
-echo "$NPM_TOKEN"
-
 if [[ ! $COMMAND =~ "pre" ]]; then
   echo npm version $COMMAND --no-git-tag-version
   npm version $COMMAND --no-git-tag-version
@@ -37,7 +33,6 @@ git push origin --all --follow-tags
 npm run esbuild
 
 # publish to npm
-echo "$NPM_TOKEN"
 export NPM_TOKEN
 npm publish
 #git push origin --tags
