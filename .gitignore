@@ -134,3 +134,9 @@ dist
 
 # build
 build
+
+# env files (can opt-in for committing if needed)
+# local env files
+.env*.local
+.env*
+!.env
