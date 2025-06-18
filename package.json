@@ -1,6 +1,6 @@
 {
   "name": "@dnclive/libjs",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Useful js",
   "main": "build/lib.js",
   "exports": {
